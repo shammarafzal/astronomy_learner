@@ -23,7 +23,7 @@ class _PlanetDetailsState extends State<PlanetDetails> {
     _initInterstitialAd();
   }
   _initBannerAd(){
-    _bannerAd = BannerAd(size: AdSize.banner, adUnitId: BannerAd.testAdUnitId
+    _bannerAd = BannerAd(size: AdSize.banner, adUnitId: "ca-app-pub-3940256099942544/9214589741"
     // dotenv.get('BannerAD_ID_Android', fallback: BannerAd.testAdUnitId)
         , listener: BannerAdListener(
       onAdLoaded: (ad){
@@ -36,7 +36,7 @@ class _PlanetDetailsState extends State<PlanetDetails> {
     _bannerAd.load();
   }
   _initInterstitialAd(){
-    InterstitialAd.load(adUnitId: InterstitialAd.testAdUnitId
+    InterstitialAd.load(adUnitId: "ca-app-pub-3940256099942544/1033173712"
     // dotenv.get('InterAD_ID_Android', fallback: InterstitialAd.testAdUnitId)
         , request: AdRequest(), adLoadCallback: InterstitialAdLoadCallback(onAdLoaded: onAdLoaded, onAdFailedToLoad: (error){}));
   }
